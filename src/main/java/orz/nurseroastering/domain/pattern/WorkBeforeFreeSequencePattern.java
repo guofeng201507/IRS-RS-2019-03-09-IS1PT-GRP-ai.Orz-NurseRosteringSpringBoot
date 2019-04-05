@@ -17,7 +17,7 @@
 package orz.nurseroastering.domain.pattern;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
-import org.optaplanner.examples.nurserostering.domain.ShiftType;
+import orz.nurseroastering.domain.ShiftType;
 
 import java.time.DayOfWeek;
 

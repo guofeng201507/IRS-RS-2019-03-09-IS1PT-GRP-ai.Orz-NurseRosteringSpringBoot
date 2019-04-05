@@ -17,7 +17,7 @@
 package orz.nurseroastering.domain;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
-import org.optaplanner.examples.common.domain.AbstractPersistable;
+import orz.nurseroastering.common.domain.AbstractPersistable;
 
 @XStreamAlias("Shift")
 public class Shift extends AbstractPersistable {

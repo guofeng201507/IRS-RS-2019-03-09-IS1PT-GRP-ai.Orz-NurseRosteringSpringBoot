@@ -17,9 +17,9 @@
 package orz.nurseroastering.domain.request;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
-import org.optaplanner.examples.common.domain.AbstractPersistable;
-import org.optaplanner.examples.nurserostering.domain.Employee;
-import org.optaplanner.examples.nurserostering.domain.ShiftDate;
+import orz.nurseroastering.common.domain.AbstractPersistable;
+import orz.nurseroastering.domain.Employee;
+import orz.nurseroastering.domain.ShiftDate;
 
 @XStreamAlias("DayOnRequest")
 public class DayOnRequest extends AbstractPersistable {

@@ -17,9 +17,9 @@
 package orz.nurseroastering.domain.request;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
-import org.optaplanner.examples.common.domain.AbstractPersistable;
-import org.optaplanner.examples.nurserostering.domain.Employee;
-import org.optaplanner.examples.nurserostering.domain.Shift;
+import orz.nurseroastering.common.domain.AbstractPersistable;
+import orz.nurseroastering.domain.Employee;
+import orz.nurseroastering.domain.Shift;
 
 @XStreamAlias("ShiftOnRequest")
 public class ShiftOnRequest extends AbstractPersistable {
