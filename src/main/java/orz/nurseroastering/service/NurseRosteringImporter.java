@@ -26,6 +26,8 @@ import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 import orz.nurseroastering.domain.*;
@@ -63,6 +65,8 @@ public class NurseRosteringImporter {
     protected Map<String, Contract> contractMap;
     protected Map<String, Employee> employeeMap;
 
+    private static final Logger log = LoggerFactory.getLogger(NurseRosteringImporter.class);
+
     public NurseRoster readSolution() throws IOException, JDOMException {
 
         File file = ResourceUtils.getFile("classpath:sprint01.xml");
@@ -92,21 +96,20 @@ public class NurseRosteringImporter {
         readShiftOnRequestList(nurseRoster, schedulingPeriodElement.getChild("ShiftOnRequests"));
         createShiftAssignmentList(nurseRoster);
 
-//        BigInteger possibleSolutionSize = BigInteger.valueOf(nurseRoster.getEmployeeList().size()).pow(
-//                nurseRoster.getShiftAssignmentList().size());
-//        log.info("NurseRoster has {} skills, {} shiftTypes, {} patterns, {} contracts, {} employees," +
-//                        " {} shiftDates, {} shiftAssignments and {} requests with a search space of {}.",
-////                    getInputId(),
-//                nurseRoster.getSkillList().size(),
-//                nurseRoster.getShiftTypeList().size(),
-//                nurseRoster.getPatternList().size(),
-//                nurseRoster.getContractList().size(),
-//                nurseRoster.getEmployeeList().size(),
-//                nurseRoster.getShiftDateList().size(),
-//                nurseRoster.getShiftAssignmentList().size(),
-//                nurseRoster.getDayOffRequestList().size() + nurseRoster.getDayOnRequestList().size()
-//                        + nurseRoster.getShiftOffRequestList().size() + nurseRoster.getShiftOnRequestList().size(),
-//                getFlooredPossibleSolutionSize(possibleSolutionSize));
+        BigInteger possibleSolutionSize = BigInteger.valueOf(nurseRoster.getEmployeeList().size()).pow(
+                nurseRoster.getShiftAssignmentList().size());
+        log.info("NurseRoster has {} skills, {} shiftTypes, {} patterns, {} contracts, {} employees," +
+                        " {} shiftDates, {} shiftAssignments and {} requests with a search space of {}.",
+                nurseRoster.getSkillList().size(),
+                nurseRoster.getShiftTypeList().size(),
+                nurseRoster.getPatternList().size(),
+                nurseRoster.getContractList().size(),
+                nurseRoster.getEmployeeList().size(),
+                nurseRoster.getShiftDateList().size(),
+                nurseRoster.getShiftAssignmentList().size(),
+                nurseRoster.getDayOffRequestList().size() + nurseRoster.getDayOnRequestList().size()
+                        + nurseRoster.getShiftOffRequestList().size() + nurseRoster.getShiftOnRequestList().size(),
+                getFlooredPossibleSolutionSize(possibleSolutionSize));
         return nurseRoster;
     }
 
@@ -628,8 +631,8 @@ public class NurseRosteringImporter {
             } else if (weight == 0) {
                 // If the weight is zero, the constraint should not be considered.
                 enabled = false;
-//                logger.warn("In contract ({}), the contractLineType ({}) is enabled with weight 0.",
-//                        contract.getCode(), contractLineType);
+                log.warn("In contract ({}), the contractLineType ({}) is enabled with weight 0.",
+                        contract.getCode(), contractLineType);
             }
         } else {
             weight = 0;
@@ -663,8 +666,8 @@ public class NurseRosteringImporter {
             } else if (minimumWeight == 0) {
                 // If the weight is zero, the constraint should not be considered.
                 minimumEnabled = false;
-//                logger.warn("In contract ({}), the contractLineType ({}) minimum is enabled with weight 0.",
-//                        contract.getCode(), contractLineType);
+                log.warn("In contract ({}), the contractLineType ({}) minimum is enabled with weight 0.",
+                        contract.getCode(), contractLineType);
             }
         } else {
             minimumWeight = 0;
@@ -680,8 +683,8 @@ public class NurseRosteringImporter {
             } else if (maximumWeight == 0) {
                 // If the weight is zero, the constraint should not be considered.
                 maximumEnabled = false;
-//                logger.warn("In contract ({}), the contractLineType ({}) maximum is enabled with weight 0.",
-//                        contract.getCode(), contractLineType);
+                log.warn("In contract ({}), the contractLineType ({}) maximum is enabled with weight 0.",
+                        contract.getCode(), contractLineType);
             }
         } else {
             maximumWeight = 0;
