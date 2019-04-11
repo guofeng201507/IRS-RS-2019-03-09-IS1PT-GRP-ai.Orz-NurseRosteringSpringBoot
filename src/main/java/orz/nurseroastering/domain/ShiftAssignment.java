@@ -29,7 +29,7 @@ import java.time.DayOfWeek;
 
 @PlanningEntity(movableEntitySelectionFilter = MovableShiftAssignmentSelectionFilter.class,
         difficultyComparatorClass = ShiftAssignmentDifficultyComparator.class)
-@XStreamAlias("ShiftAssignment")
+//@XStreamAlias("ShiftAssignment")
 public class ShiftAssignment extends AbstractPersistable {
 
     private Shift shift;

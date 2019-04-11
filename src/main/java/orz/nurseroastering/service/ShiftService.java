@@ -15,6 +15,7 @@ import orz.nurseroastering.domain.Shift;
 import orz.nurseroastering.domain.ShiftAssignment;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -41,11 +42,13 @@ public class ShiftService {
         final HardSoftScore score = nurseRoster.getScore();
 
         List<ShiftAssignment> shiftAssignmentList = nurseRoster.getShiftAssignmentList();
-        for (ShiftAssignment shiftAssignment : shiftAssignmentList) {
-            Shift shift = shiftAssignment.getShift();
-            Employee employee = shiftAssignment.getEmployee();
-        }
+//        for (ShiftAssignment shiftAssignment : shiftAssignmentList) {
+//            Shift shift = shiftAssignment.getShift();
+//            Employee employee = shiftAssignment.getEmployee();
+//        }
         log.info(String.format("'%s' score ", score.toString()));
+
+//        List<ShiftAssignment> al2 = new ArrayList<ShiftAssignment>(shiftAssignmentList.subList(1, 4));
 
         return shiftAssignmentList;
     }

@@ -16,6 +16,7 @@
 
 package orz.nurseroastering.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import orz.nurseroastering.common.domain.AbstractPersistable;
 

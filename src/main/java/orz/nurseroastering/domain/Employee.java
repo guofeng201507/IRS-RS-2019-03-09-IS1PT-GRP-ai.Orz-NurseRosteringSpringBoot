@@ -16,6 +16,7 @@
 
 package orz.nurseroastering.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import orz.nurseroastering.common.domain.AbstractPersistable;
 import orz.nurseroastering.domain.contract.Contract;
@@ -54,6 +55,7 @@ public class Employee extends AbstractPersistable {
         this.name = name;
     }
 
+    @JsonIgnore
     public Contract getContract() {
         return contract;
     }
@@ -66,6 +68,7 @@ public class Employee extends AbstractPersistable {
         return getContract().getWeekendLength();
     }
 
+    @JsonIgnore
     public Map<ShiftDate, DayOffRequest> getDayOffRequestMap() {
         return dayOffRequestMap;
     }
@@ -73,7 +76,7 @@ public class Employee extends AbstractPersistable {
     public void setDayOffRequestMap(Map<ShiftDate, DayOffRequest> dayOffRequestMap) {
         this.dayOffRequestMap = dayOffRequestMap;
     }
-
+    @JsonIgnore
     public Map<ShiftDate, DayOnRequest> getDayOnRequestMap() {
         return dayOnRequestMap;
     }
@@ -81,7 +84,7 @@ public class Employee extends AbstractPersistable {
     public void setDayOnRequestMap(Map<ShiftDate, DayOnRequest> dayOnRequestMap) {
         this.dayOnRequestMap = dayOnRequestMap;
     }
-
+    @JsonIgnore
     public Map<Shift, ShiftOffRequest> getShiftOffRequestMap() {
         return shiftOffRequestMap;
     }
@@ -89,7 +92,7 @@ public class Employee extends AbstractPersistable {
     public void setShiftOffRequestMap(Map<Shift, ShiftOffRequest> shiftOffRequestMap) {
         this.shiftOffRequestMap = shiftOffRequestMap;
     }
-
+    @JsonIgnore
     public Map<Shift, ShiftOnRequest> getShiftOnRequestMap() {
         return shiftOnRequestMap;
     }

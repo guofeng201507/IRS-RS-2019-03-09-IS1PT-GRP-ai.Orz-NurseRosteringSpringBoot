@@ -16,6 +16,7 @@
 
 package orz.nurseroastering.domain.contract;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamInclude;
 import orz.nurseroastering.common.domain.AbstractPersistable;
@@ -30,6 +31,7 @@ public abstract class ContractLine extends AbstractPersistable {
     private Contract contract;
     private ContractLineType contractLineType;
 
+    @JsonIgnore
     public Contract getContract() {
         return contract;
     }
