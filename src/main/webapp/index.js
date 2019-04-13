@@ -49,6 +49,7 @@ async function testUI() {
     renderResult(data);
 }
 
-testUI();
+// testUI();
+testSolver();
 
 
