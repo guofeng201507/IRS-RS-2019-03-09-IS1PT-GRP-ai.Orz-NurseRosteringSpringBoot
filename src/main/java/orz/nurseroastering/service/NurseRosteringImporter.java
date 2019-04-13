@@ -69,7 +69,7 @@ public class NurseRosteringImporter {
 
     public NurseRoster readSolution() throws IOException, JDOMException {
 
-        File file = ResourceUtils.getFile("classpath:sprint01.xml");
+        File file = ResourceUtils.getFile("classpath:sprint01_simple.xml");
         SAXBuilder builder = new SAXBuilder(false);
         Document document = builder.build(file);
 

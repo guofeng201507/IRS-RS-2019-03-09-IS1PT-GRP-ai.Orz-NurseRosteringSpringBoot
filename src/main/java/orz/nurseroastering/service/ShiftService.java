@@ -48,7 +48,7 @@ public class ShiftService {
 //        }
         log.info(String.format("'%s' score ", score.toString()));
 
-//        List<ShiftAssignment> al2 = new ArrayList<ShiftAssignment>(shiftAssignmentList.subList(1, 4));
+//        List<ShiftAssignment> al2 = new ArrayList<ShiftAssignment>(shiftAssignmentList.subList(1, 2));
 
         return shiftAssignmentList;
     }
