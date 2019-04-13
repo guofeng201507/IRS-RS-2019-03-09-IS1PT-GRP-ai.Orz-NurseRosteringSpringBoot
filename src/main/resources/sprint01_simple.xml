@@ -343,18 +343,6 @@
   <DayOffRequests>
     <DayOff weight="1">
       <EmployeeID>0</EmployeeID>
-      <Date>2019-01-02</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>0</EmployeeID>
-      <Date>2019-01-08</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>0</EmployeeID>
-      <Date>2019-01-07</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>0</EmployeeID>
       <Date>2019-01-05</Date>
     </DayOff>
     <DayOff weight="1">
@@ -380,18 +368,6 @@
     <DayOff weight="1">
       <EmployeeID>0</EmployeeID>
       <Date>2019-01-27</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>1</EmployeeID>
-      <Date>2019-01-20</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>1</EmployeeID>
-      <Date>2019-01-15</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>1</EmployeeID>
-      <Date>2019-01-18</Date>
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>1</EmployeeID>
@@ -431,18 +407,6 @@
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>2</EmployeeID>
-      <Date>2019-01-21</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>2</EmployeeID>
-      <Date>2019-01-16</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>2</EmployeeID>
-      <Date>2019-01-04</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>2</EmployeeID>
       <Date>2019-01-22</Date>
     </DayOff>
     <DayOff weight="1">
@@ -460,18 +424,6 @@
     <DayOff weight="1">
       <EmployeeID>2</EmployeeID>
       <Date>2019-01-20</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>3</EmployeeID>
-      <Date>2019-01-14</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>3</EmployeeID>
-      <Date>2019-01-21</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>3</EmployeeID>
-      <Date>2019-01-17</Date>
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>3</EmployeeID>
@@ -503,18 +455,6 @@
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>4</EmployeeID>
-      <Date>2019-01-18</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>4</EmployeeID>
-      <Date>2019-01-07</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>4</EmployeeID>
-      <Date>2019-01-02</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>4</EmployeeID>
       <Date>2019-01-28</Date>
     </DayOff>
     <DayOff weight="1">
@@ -540,18 +480,6 @@
     <DayOff weight="1">
       <EmployeeID>4</EmployeeID>
       <Date>2019-01-10</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>5</EmployeeID>
-      <Date>2019-01-04</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>5</EmployeeID>
-      <Date>2019-01-22</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>5</EmployeeID>
-      <Date>2019-01-14</Date>
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>5</EmployeeID>
@@ -583,18 +511,6 @@
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>6</EmployeeID>
-      <Date>2019-01-17</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>6</EmployeeID>
-      <Date>2019-01-10</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>6</EmployeeID>
-      <Date>2019-01-27</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>6</EmployeeID>
       <Date>2019-01-07</Date>
     </DayOff>
     <DayOff weight="1">
@@ -620,18 +536,6 @@
     <DayOff weight="1">
       <EmployeeID>6</EmployeeID>
       <Date>2019-01-28</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-27</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-02</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-07</Date>
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>7</EmployeeID>
@@ -663,30 +567,6 @@
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>8</EmployeeID>
-      <Date>2019-01-07</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-05</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-15</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-10</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-08</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-04</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>8</EmployeeID>
       <Date>2019-01-26</Date>
     </DayOff>
     <DayOff weight="1">
@@ -700,18 +580,6 @@
     <DayOff weight="1">
       <EmployeeID>8</EmployeeID>
       <Date>2019-01-22</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>9</EmployeeID>
-      <Date>2019-01-06</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>9</EmployeeID>
-      <Date>2019-01-22</Date>
-    </DayOff>
-    <DayOff weight="1">
-      <EmployeeID>9</EmployeeID>
-      <Date>2019-01-19</Date>
     </DayOff>
     <DayOff weight="1">
       <EmployeeID>9</EmployeeID>
@@ -744,26 +612,6 @@
   </DayOffRequests>
   <ShiftOffRequests>
     <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>0</EmployeeID>
-      <Date>2019-01-03</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>0</EmployeeID>
-      <Date>2019-01-13</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>0</EmployeeID>
-      <Date>2019-01-12</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>0</EmployeeID>
-      <Date>2019-01-04</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
       <ShiftTypeID>D</ShiftTypeID>
       <EmployeeID>0</EmployeeID>
       <Date>2019-01-02</Date>
@@ -771,47 +619,7 @@
     <ShiftOff weight="1">
       <ShiftTypeID>N</ShiftTypeID>
       <EmployeeID>1</EmployeeID>
-      <Date>2019-01-18</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>1</EmployeeID>
-      <Date>2019-01-09</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>1</EmployeeID>
-      <Date>2019-01-27</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>1</EmployeeID>
-      <Date>2019-01-08</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>1</EmployeeID>
       <Date>2019-01-19</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>2</EmployeeID>
-      <Date>2019-01-27</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>2</EmployeeID>
-      <Date>2019-01-09</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>2</EmployeeID>
-      <Date>2019-01-24</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>D</ShiftTypeID>
-      <EmployeeID>2</EmployeeID>
-      <Date>2019-01-11</Date>
     </ShiftOff>
     <ShiftOff weight="1">
       <ShiftTypeID>L</ShiftTypeID>
@@ -821,47 +629,7 @@
     <ShiftOff weight="1">
       <ShiftTypeID>E</ShiftTypeID>
       <EmployeeID>3</EmployeeID>
-      <Date>2019-01-11</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>D</ShiftTypeID>
-      <EmployeeID>3</EmployeeID>
-      <Date>2019-01-19</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>3</EmployeeID>
-      <Date>2019-01-13</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>3</EmployeeID>
-      <Date>2019-01-10</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>3</EmployeeID>
       <Date>2019-01-01</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>4</EmployeeID>
-      <Date>2019-01-01</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>4</EmployeeID>
-      <Date>2019-01-21</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>4</EmployeeID>
-      <Date>2019-01-25</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>D</ShiftTypeID>
-      <EmployeeID>4</EmployeeID>
-      <Date>2019-01-17</Date>
     </ShiftOff>
     <ShiftOff weight="1">
       <ShiftTypeID>E</ShiftTypeID>
@@ -869,49 +637,9 @@
       <Date>2019-01-22</Date>
     </ShiftOff>
     <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>5</EmployeeID>
-      <Date>2019-01-05</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>5</EmployeeID>
-      <Date>2019-01-13</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>5</EmployeeID>
-      <Date>2019-01-20</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>5</EmployeeID>
-      <Date>2019-01-04</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
       <ShiftTypeID>D</ShiftTypeID>
       <EmployeeID>5</EmployeeID>
       <Date>2019-01-05</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>6</EmployeeID>
-      <Date>2019-01-27</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>D</ShiftTypeID>
-      <EmployeeID>6</EmployeeID>
-      <Date>2019-01-14</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>6</EmployeeID>
-      <Date>2019-01-18</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>6</EmployeeID>
-      <Date>2019-01-15</Date>
     </ShiftOff>
     <ShiftOff weight="1">
       <ShiftTypeID>D</ShiftTypeID>
@@ -919,74 +647,9 @@
       <Date>2019-01-03</Date>
     </ShiftOff>
     <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-18</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-07</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-10</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-18</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>D</ShiftTypeID>
-      <EmployeeID>7</EmployeeID>
-      <Date>2019-01-13</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-17</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-12</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-28</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>E</ShiftTypeID>
-      <EmployeeID>8</EmployeeID>
-      <Date>2019-01-23</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
       <ShiftTypeID>E</ShiftTypeID>
       <EmployeeID>8</EmployeeID>
       <Date>2019-01-27</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>9</EmployeeID>
-      <Date>2019-01-01</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>L</ShiftTypeID>
-      <EmployeeID>9</EmployeeID>
-      <Date>2019-01-21</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>9</EmployeeID>
-      <Date>2019-01-10</Date>
-    </ShiftOff>
-    <ShiftOff weight="1">
-      <ShiftTypeID>N</ShiftTypeID>
-      <EmployeeID>9</EmployeeID>
-      <Date>2019-01-21</Date>
     </ShiftOff>
     <ShiftOff weight="1">
       <ShiftTypeID>L</ShiftTypeID>
