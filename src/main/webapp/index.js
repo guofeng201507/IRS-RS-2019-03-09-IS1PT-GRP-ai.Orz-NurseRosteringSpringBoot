@@ -49,7 +49,14 @@ async function testUI() {
     renderResult(data);
 }
 
+document.querySelectorAll("a").forEach(item =>{
+    item.addEventListener('click', e=> {
+        console.log(e.target);
+
+    });
+});
+
 // testUI();
-testSolver();
+// testSolver();
 
 
