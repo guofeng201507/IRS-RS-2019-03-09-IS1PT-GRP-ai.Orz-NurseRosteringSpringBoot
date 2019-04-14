@@ -28,14 +28,14 @@ public class ShiftService {
 
     private static final Logger log = LoggerFactory.getLogger(NurseRosteringImporter.class);
 
-    public List<ShiftAssignment> plan() throws JDOMException, IOException {
+    public List<ShiftAssignment> plan(String fileName) throws JDOMException, IOException {
 
         SolverFactory<NurseRoster> solverFactory =
                 SolverFactory.createFromXmlResource("config/nurseRosteringSolverConfig.xml");
 
         Solver solver = solverFactory.buildSolver();
 
-        NurseRoster nurseRoster = nurseRosteringImporter.readSolution();
+        NurseRoster nurseRoster = nurseRosteringImporter.readSolution(fileName);
 
         nurseRoster = (NurseRoster) solver.solve(nurseRoster);
 

@@ -2,6 +2,7 @@ package orz.nurseroastering.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import orz.nurseroastering.domain.ShiftAssignment;
 import orz.nurseroastering.service.ShiftService;
@@ -21,10 +22,10 @@ public class ApiController {
     }
 
     @RequestMapping("/start")
-    public List<ShiftAssignment> startPlan() {
+    public List<ShiftAssignment> startPlan(@RequestParam(name = "fileName") String fileName) {
         List<ShiftAssignment> plan;
         try {
-            plan = shiftService.plan();
+            plan = shiftService.plan(fileName);
         } catch (Exception e) {
             return Collections.emptyList();
         }

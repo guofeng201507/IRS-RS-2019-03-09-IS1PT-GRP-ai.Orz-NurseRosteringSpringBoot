@@ -67,9 +67,13 @@ public class NurseRosteringImporter {
 
     private static final Logger log = LoggerFactory.getLogger(NurseRosteringImporter.class);
 
-    public NurseRoster readSolution() throws IOException, JDOMException {
+    public NurseRoster readSolution(String fileName) throws IOException, JDOMException {
 
-        File file = ResourceUtils.getFile("classpath:sprint01_simple.xml");
+        String filePath = "classpath:" + fileName;
+
+//        File file = ResourceUtils.getFile("classpath:sprint01_simple.xml");
+        File file = ResourceUtils.getFile(filePath);
+
         SAXBuilder builder = new SAXBuilder(false);
         Document document = builder.build(file);
 

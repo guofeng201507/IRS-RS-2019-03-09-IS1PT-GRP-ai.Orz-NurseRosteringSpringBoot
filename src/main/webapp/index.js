@@ -1,17 +1,18 @@
 import {get} from "./utilities/fetchApi.m.js";
 
-async function testSolver() {
-    let result = await get('/start').then(response => {
+async function callOptaSolver(fileName) {
+    document.getElementById('result').innerHTML = `<img src="giphy.gif">`;
+    let result = await get(`/start?fileName=${fileName}`).then(response => {
         return response.text() || '{}';
     });
-
     let data = JSON.parse(result);
     renderResult(data);
 }
 
 function renderResult(data) {
-    let htmlCode = `<body>This is the result<div>
-            <table border='1'>`;
+    let htmlCode = `<div>This is the result</div>
+            <div>
+                <table border='1'>`;
 
     htmlCode = htmlCode + `<tr>
                             <td>ShiftType</td>
@@ -35,9 +36,9 @@ function renderResult(data) {
         htmlCode = htmlCode + `</tr>`
     }
 
-    htmlCode = htmlCode + `</table></div></body>`;
-
-    document.body.innerHTML = htmlCode;
+    htmlCode = htmlCode + `</table></div>`;
+    document.getElementById('result').innerHTML = htmlCode;
+    // document.body.innerHTML = htmlCode;
 }
 
 async function testUI() {
@@ -49,14 +50,14 @@ async function testUI() {
     renderResult(data);
 }
 
-document.querySelectorAll("a").forEach(item =>{
-    item.addEventListener('click', e=> {
-        console.log(e.target);
-
+document.querySelectorAll("a").forEach(item => {
+    item.addEventListener('click', e => {
+        let fileName = e.target.id;
+        callOptaSolver(fileName);
     });
 });
 
 // testUI();
-// testSolver();
+// callOptaSolver();
 
 
