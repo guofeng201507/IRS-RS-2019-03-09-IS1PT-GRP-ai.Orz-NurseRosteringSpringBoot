@@ -2,7 +2,7 @@ import {get} from "./utilities/fetchApi.m.js";
 
 async function callOptaSolver(fileName) {
     document.getElementById('result').innerHTML = `<img src="giphy.gif">`;
-    let result = await get(`/start?fileName=${fileName}`).then(response => {
+    let result = await get(`/solveRostering?fileName=${fileName}`).then(response => {
         return response.text() || '{}';
     });
     let data = JSON.parse(result);

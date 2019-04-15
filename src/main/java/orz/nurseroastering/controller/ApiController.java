@@ -21,7 +21,7 @@ public class ApiController {
         return "API worked!";
     }
 
-    @RequestMapping("/start")
+    @RequestMapping("/solveRostering")
     public List<ShiftAssignment> startPlan(@RequestParam(name = "fileName") String fileName) {
         List<ShiftAssignment> plan;
         try {
