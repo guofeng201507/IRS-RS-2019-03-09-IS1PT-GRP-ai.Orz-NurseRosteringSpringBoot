@@ -60,13 +60,12 @@ document.querySelectorAll("a").forEach(item => {
 });
 
 window.addEventListener("load", function () {
-    create_sample_table(document.getElementById("table_box_bootstrap"), false, false, false);
+    create_sample_table(document.getElementById("table_box_native"));
     var box = paginator({
-        table: document.getElementById("table_box_bootstrap").getElementsByTagName("table")[0],
-        box_mode: "list",
+        table: document.getElementById("table_box_native").getElementsByTagName("table")[0],
+        box: document.getElementById("index_native"),
+        active_class: "color_page"
     });
-    box.className = "box";
-    document.getElementById("table_box_bootstrap").appendChild(box);
 }, false);
 // testUI();
 // callOptaSolver();
