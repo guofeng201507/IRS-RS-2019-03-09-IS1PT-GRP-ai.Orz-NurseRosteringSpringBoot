@@ -1,4 +1,6 @@
 import {get} from "./utilities/fetchApi.m.js";
+import {create_sample_table} from "./utilities/table.m.js";
+import {paginator} from "./utilities/paginator.m.js";
 
 async function callOptaSolver(fileName) {
     document.getElementById('result').innerHTML = `<img src="giphy.gif">`;
@@ -57,6 +59,15 @@ document.querySelectorAll("a").forEach(item => {
     });
 });
 
+window.addEventListener("load", function () {
+    create_sample_table(document.getElementById("table_box_bootstrap"), false, false, false);
+    var box = paginator({
+        table: document.getElementById("table_box_bootstrap").getElementsByTagName("table")[0],
+        box_mode: "list",
+    });
+    box.className = "box";
+    document.getElementById("table_box_bootstrap").appendChild(box);
+}, false);
 // testUI();
 // callOptaSolver();
 

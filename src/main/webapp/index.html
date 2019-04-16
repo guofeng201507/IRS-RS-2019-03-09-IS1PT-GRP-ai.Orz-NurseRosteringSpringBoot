@@ -6,11 +6,7 @@
     <script type="module" src="index.js"></script>
 
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-
-
-    </style>
+<!--    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"/>-->
 
 </head>
 <body>
@@ -18,20 +14,25 @@
     <h2>Welcome to Nurse Roastering</h2>
 </div>
 
-<div class="dropdown" id="select">
-    <button class="dropbtn">Scenarios Selection
-        <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-        <a id="sprint01.xml">First Scenario</a>
-        <a id="sprint01_simple.xml">Second Scenario</a>
-        <a href="#">Third Scenarios</a>
+<div>
+    <div class="dropdown" id="select" style="float: left; ">
+        <button class="dropbtn">Scenarios Selection
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a id="sprint01.xml">First Scenario</a>
+            <a id="sprint01_simple.xml">Second Scenario</a>
+            <a href="#">Third Scenarios</a>
+        </div>
     </div>
+
+    <div id="result">
+
+    </div>
+
+
 </div>
 
-<div id="result">
-
-</div>
-
+<div id="table_box_bootstrap" style="float: left;" ></div>
 </body>
 </html>
