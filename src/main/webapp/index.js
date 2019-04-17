@@ -12,7 +12,14 @@ async function callOptaSolver(fileName) {
     document.getElementById('result').innerHTML = '';
     document.getElementById("table_box_native").innerHTML = '';
     document.getElementById("index_native").innerHTML = '';
-    let preparedTableContent = prepareTableContent(data);
+
+    let shiftAssignmentList = data.shiftAssignmentList;
+    let hardScore = data.score.hardScore;
+    let softScore = data.score.softScore;
+
+    document.getElementById('result').innerHTML = `Hard score is ${hardScore}, Soft Score is ${softScore}`;
+
+    let preparedTableContent = prepareTableContent(shiftAssignmentList);
     renderTableContent(preparedTableContent);
 }
 
