@@ -5,79 +5,45 @@
     <title>Hello</title>
     <script type="module" src="index.js"></script>
 
+    <link rel="stylesheet" href="styles.css">
+    <!--    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"/>-->
+
     <style>
-        body {
-            background-color: powderblue;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        a:hover, .dropdown:hover .dropbtn {
-            background-color: red;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
+        .box div, .box ul {
+            float: right;
         }
 
     </style>
-
 </head>
 <body>
 <div>
-    <h2>Welcome to nurse roastering</h2>
+    <h2>Welcome to Nurse Roastering</h2>
 </div>
 
-<div class="dropdown" id="select">
+<div class="dropdown" id="select" style="float: left; ">
     <button class="dropbtn">Scenarios Selection
         <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-        <a id="sprint01.xml">First Scenario</a>
-        <a id="sprint02_simple.xml">Second Scenario</a>
+        <a id="sprint01.xml">1 skills, 4 shiftTypes, 3 patterns, 4 contracts, 10 employees, 28 shiftDates, 152 shiftAssignments and 150 requests</a>
+        <a id="sprint01_simple.xml">1 skills, 4 shiftTypes, 3 patterns, 2 contracts, 10 employees, 28 shiftDates, 152 shiftAssignments and 76 requests</a>
         <a href="#">Third Scenarios</a>
     </div>
 </div>
 
-<div id="result">
+<div id="result"></div>
 
-</div>
+
+<table>
+    <tr>
+        <td>
+            <div id="table_box_native" class="result"></div>
+            <div id="index_native" class="box"></div>
+        </td>
+
+    </tr>
+</table>
+
 
 </body>
 </html>
