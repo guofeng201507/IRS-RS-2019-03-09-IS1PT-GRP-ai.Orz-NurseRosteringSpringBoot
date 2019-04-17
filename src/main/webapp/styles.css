@@ -1,5 +1,21 @@
 body {
-    /*background-color: powderblue;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.result table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+}
+
+div.result td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+div.result tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 .dropdown {

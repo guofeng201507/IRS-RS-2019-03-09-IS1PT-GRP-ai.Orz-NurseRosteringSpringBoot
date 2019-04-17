@@ -1,7 +1,4 @@
 export const create_sample_table = (parentNode, head, body, foot, data) =>{
-    if (typeof head == "undefined") {head = true;}
-    if (typeof body == "undefined") {body = true;}
-    if (typeof foot == "undefined") {foot = true;}
     if (!data) {
         data = {
             "head": [ "Title", "Author", "Publishing Date" ],

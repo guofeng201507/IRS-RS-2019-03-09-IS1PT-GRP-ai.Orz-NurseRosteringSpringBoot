@@ -4,43 +4,47 @@ import {paginator} from "./utilities/paginator.m.js";
 
 async function callOptaSolver(fileName) {
     document.getElementById('result').innerHTML = `<img src="giphy.gif">`;
+
     let result = await get(`/solveRostering?fileName=${fileName}`).then(response => {
         return response.text() || '{}';
     });
     let data = JSON.parse(result);
-    renderResult(data);
+    document.getElementById('result').innerHTML = '';
+    document.getElementById("table_box_native").innerHTML = '';
+    document.getElementById("index_native").innerHTML = '';
+    let preparedTableContent = prepareTableContent(data);
+    renderTableContent(preparedTableContent);
 }
 
-function renderResult(data) {
-    let htmlCode = `<div>This is the result</div>
-            <div>
-                <table border='1'>`;
-
-    htmlCode = htmlCode + `<tr>
-                            <td>ShiftType</td>
-                            <td>Contract</td>
-                            <td>Shift</td>
-                            <td>Shift Date</td>
-                            <td>Employee</td>
-                            <!--<td>Shift Date Day of Week</td>-->
-                            </tr>`;
+function prepareTableContent(data) {
+    let tableData = {
+        'head': ['Shift Type', 'Contract', 'Shift', 'Shift Date', 'Employee'],
+        'body': [],
+        'foot': ['Shift Type', 'Contract', 'Shift', 'Shift Date', 'Employee']
+    };
 
     for (let i = 0; i < data.length; i++) {
         let shiftResult = data[i];
-        htmlCode = htmlCode + `<tr>`;
-
-        htmlCode = htmlCode + `<td>` + shiftResult['shiftType']['label'] + `</td>`;
-        htmlCode = htmlCode + `<td>` + shiftResult['contract']['description'] + `</td>`;
-        htmlCode = htmlCode + `<td>` + shiftResult['shift']['label'] + `</td>`;
-        htmlCode = htmlCode + `<td>` + shiftResult['shiftDate']['label'] + `</td>`;
-        htmlCode = htmlCode + `<td>` + shiftResult['employee']['label'] + `</td>`;
-
-        htmlCode = htmlCode + `</tr>`
+        let item = [];
+        item.push(shiftResult['shiftType']['label']);
+        item.push(shiftResult['contract']['description']);
+        item.push(shiftResult['shift']['label']);
+        item.push(shiftResult['shiftDate']['label']);
+        item.push(shiftResult['employee']['label']);
+        tableData.body.push(item);
     }
+    return tableData;
+}
 
-    htmlCode = htmlCode + `</table></div>`;
-    document.getElementById('result').innerHTML = htmlCode;
-    // document.body.innerHTML = htmlCode;
+function renderTableContent(data) {
+    create_sample_table(document.getElementById("table_box_native"), true, true, true, data);
+    var box = paginator({
+        table: document.getElementById("table_box_native").getElementsByTagName("table")[0],
+        box: document.getElementById("index_native"),
+        active_class: "color_page",
+        rows_per_page: 15
+    });
+    return box;
 }
 
 async function testUI() {
@@ -49,7 +53,8 @@ async function testUI() {
     });
 
     let data = JSON.parse(result);
-    renderResult(data);
+    let preparedTableContent = prepareTableContent(data);
+    renderTableContent(preparedTableContent);
 }
 
 document.querySelectorAll("a").forEach(item => {
@@ -59,14 +64,6 @@ document.querySelectorAll("a").forEach(item => {
     });
 });
 
-window.addEventListener("load", function () {
-    create_sample_table(document.getElementById("table_box_native"));
-    var box = paginator({
-        table: document.getElementById("table_box_native").getElementsByTagName("table")[0],
-        box: document.getElementById("index_native"),
-        active_class: "color_page"
-    });
-}, false);
 // testUI();
 // callOptaSolver();
 
