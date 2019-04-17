@@ -69,9 +69,25 @@ rule "oneShiftPerDay"
         scoreHolder.addHardConstraintMatch(kcontext, -1);
 end
 
+rule "headNurseForDHShift"
+	when
+		ShiftAssignment ($employee : employee, shift.getShiftType().getCode() == 'DH')
+		SkillProficiency (employee == $employee, skill.getCode() != 'HeadNurse')
+	then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end	
+
 // ############################################################################
 // Soft constraints
 // ############################################################################
+
+rule "Head Nurse Not Plan For Normal Shift"
+	when
+		SkillProficiency ($employee : employee, skill.getCode() == 'HeadNurse')
+		ShiftAssignment (employee == $employee, shift.getShiftType().getCode() != 'DH')
+	then
+       scoreHolder.addSoftConstraintMatch(kcontext, -1);
+end	
 
 rule "Minimum and maximum number of assignments"
         salience 1 // Do these rules first (optional, for performance)
