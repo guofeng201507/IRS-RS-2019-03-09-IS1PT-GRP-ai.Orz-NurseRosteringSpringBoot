@@ -10,7 +10,6 @@
     </parent>
     <groupId>Orz</groupId>
     <artifactId>nurseroastering</artifactId>
-    <version>1</version>
     <name>nurseroastering</name>
     <description>Nurse Roaster OptaPlanner project for Spring Boot</description>
 
@@ -73,6 +72,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>NurseRoastering</finalName>
     </build>
 
 </project>
