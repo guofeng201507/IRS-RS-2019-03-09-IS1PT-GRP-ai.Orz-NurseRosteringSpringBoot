@@ -25,9 +25,9 @@ async function callOptaSolver(fileName) {
 
 function prepareTableContent(data) {
     let tableData = {
-        'head': ['Shift Type', 'Contract', 'Shift', 'Shift Date', 'Employee'],
+        'head': ['Shift Type', 'Contract', 'Shift', 'Shift Date', 'Nurse'],
         'body': [],
-        'foot': ['Shift Type', 'Contract', 'Shift', 'Shift Date', 'Employee']
+        'foot': ['Shift Type', 'Contract', 'Shift', 'Shift Date', 'Nurse']
     };
 
     for (let i = 0; i < data.length; i++) {
