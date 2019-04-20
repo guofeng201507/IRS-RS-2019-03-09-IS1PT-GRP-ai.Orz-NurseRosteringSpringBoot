@@ -69,6 +69,25 @@ rule "oneShiftPerDay"
         scoreHolder.addHardConstraintMatch(kcontext, -1);
 end
 
+// A nurse can not cover night shift and early shift of next day
+rule "overNightConsecutiveShiftEarly"
+	when
+		ShiftAssignment($employee : employee, $dayIndex : shiftDateDayIndex, shift.getShiftType().getCode() == 'N')
+		ShiftAssignment(shiftDateDayIndex == $dayIndex + 1 && shift.getShiftType().getCode() == 'E' && employee == $employee)
+	then
+		scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+// A nurse can not cover night shift and day shift of next day
+rule "overNightConsecutiveShiftDay"
+	when
+		ShiftAssignment($employee : employee, $dayIndex : shiftDateDayIndex, shift.getShiftType().getCode() == 'N')
+		ShiftAssignment(shiftDateDayIndex == $dayIndex + 1 && shift.getShiftType().getCode() == 'D' && employee == $employee)
+	then
+		scoreHolder.addHardConstraintMatch(kcontext, -1);
+end
+
+//Only Head Nurse is allowed to take DH shift
 rule "headNurseForDHShift"
 	when
 		ShiftAssignment ($employee : employee, shift.getShiftType().getCode() == 'DH')
